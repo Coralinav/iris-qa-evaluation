@@ -116,3 +116,34 @@ Playwright includes a built-in interactive HTML report highlighting test steps, 
    ```bash
    npx playwright show-report
    ```
+## Environment Variables
+
+Create a `.env` file in the project root:
+
+```env
+BASE_URL=<application_url>
+CASE_TOKEN=<case_token>
+
+TEST_SUBJECT_PASSWORD=<password>
+JUNIOR_PASSWORD=<password>
+DIRECTOR_PASSWORD=<password>
+```
+
+The values are intentionally excluded from source control for security reasons.
+
+## Installation
+
+```bash
+npm install
+```
+
+## Run Tests
+
+```bash
+npx playwright test
+```
+
+## Notes
+
+This project was developed against a private evaluation environment. Credentials and access tokens are not included in the repository.
+```
