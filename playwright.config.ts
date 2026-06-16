@@ -1,4 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 export default defineConfig({
   fullyParallel: false,
@@ -10,9 +13,9 @@ export default defineConfig({
     ['html', { open: 'never' }]
   ],
   use: {
-    baseURL: process.env.BASE_URL || 'https://iris.revelarautomation.com',
+    baseURL: process.env.BASE_URL || '',
     extraHTTPHeaders: {
-      'x-case-token': process.env.CASE_TOKEN || '6236a25ba73388af081c29d1fedcd3cfb9af659af8d369dea3faa7eb3c431fe7',
+      'x-case-token': process.env.CASE_TOKEN || '',
     },
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',

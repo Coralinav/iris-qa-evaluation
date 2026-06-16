@@ -1,22 +1,22 @@
 declare const process: any;
 
 export const TEST_CONSTANTS = {
-  BASE_URL: process.env.BASE_URL || 'https://iris.revelarautomation.com',
-  CASE_TOKEN: process.env.CASE_TOKEN || '6236a25ba73388af081c29d1fedcd3cfb9af659af8d369dea3faa7eb3c431fe7',
+  BASE_URL: process.env.BASE_URL || '',
+  CASE_TOKEN: process.env.CASE_TOKEN || '',
   ROLES: {
     TEST_SUBJECT: {
       LABEL: 'Test Subject',
-      PASSWORD: 'iris-subject-2026',
+      PASSWORD: process.env.TEST_SUBJECT_PASSWORD || '',
       DEFAULT_ID: 'S-0001'
     },
     JUNIOR_COORDINATOR: {
       LABEL: 'Junior Test Coordinator',
-      PASSWORD: 'iris-junior-2026',
+      PASSWORD: process.env.JUNIOR_COORDINATOR_PASSWORD || '',
       DEFAULT_ID: 'S-0002'
     },
     DIRECTOR: {
       LABEL: 'Director of Enrichment',
-      PASSWORD: 'Iris-Welcome-2026!',
+      PASSWORD: process.env.DIRECTOR_PASSWORD || '',
       DEFAULT_ID: 'director'
     }
   },

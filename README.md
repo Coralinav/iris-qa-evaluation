@@ -51,7 +51,21 @@ Navigate to the project directory and run:
 npm install
 ```
 
-### 2. Running the Tests
+### 2. Configure Environment Variables
+Create a `.env` file in the root of the project by copying the example file:
+```bash
+cp .env.example .env
+```
+Open the `.env` file and fill in the required credentials and tokens:
+* `BASE_URL`: The base URL of the target environment (default: `https://iris.revelarautomation.com`)
+* `CASE_TOKEN`: Your unique evaluation Case Token.
+* `TEST_SUBJECT_PASSWORD`: Password for the Test Subject role.
+* `JUNIOR_COORDINATOR_PASSWORD`: Password for the Junior Coordinator role.
+* `DIRECTOR_PASSWORD`: Password for the Director role.
+
+*Note: The `.env` file is excluded from git tracking to keep credentials secure.*
+
+### 3. Running the Tests
 
 You can run the tests using either **NPM scripts** (shortcuts) or **native Playwright CLI commands** (flexible options):
 
