@@ -1,0 +1,27 @@
+{
+  "name": "iris-qa-evaluation",
+  "version": "1.0.0",
+  "description": "QA Evaluation and Automated Regression Suite separated by FE and BE",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:fe": "playwright test --project=frontend",
+    "test:be": "playwright test --project=backend"
+  },
+  "keywords": [
+    "playwright",
+    "qa",
+    "regression",
+    "test",
+    "frontend",
+    "backend"
+  ],
+  "author": "QA Auditor",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^25.9.3",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
+  }
+}
