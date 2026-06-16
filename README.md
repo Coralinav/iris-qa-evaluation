@@ -92,19 +92,3 @@ Playwright includes a built-in interactive HTML report highlighting test steps, 
    ```bash
    npx playwright show-report
    ```
-
-## Installation
-
-```bash
-npm install
-```
-
-## Run Tests
-
-```bash
-npx playwright test
-```
-
-## Notes
-
-This project was developed against a private evaluation environment. Credentials and access tokens are not included in the repository.
