@@ -69,7 +69,7 @@ Open the `.env` file and fill in the required credentials and tokens:
 
 You can run the tests using either **NPM scripts** (shortcuts) or **native Playwright CLI commands** (flexible options):
 
-#### Option A: Using NPM Scripts
+#### Using NPM Scripts
 * **Run All Tests:**
   ```bash
   npm test
@@ -82,30 +82,6 @@ You can run the tests using either **NPM scripts** (shortcuts) or **native Playw
   ```bash
   npm run test:be
   ```
-
-#### Option B: Using Playwright CLI
-* **Run Frontend (UI) Suite:**
-  ```bash
-  npx playwright test --project=frontend
-  ```
-* **Run Backend (API) Suite:**
-  ```bash
-  npx playwright test --project=backend
-  ```
-* **Run a Specific Test Case (e.g., TS-001):**
-  ```bash
-  npx playwright test --grep "TS-001"
-  ```
-* **Run with UI Mode (Interactive runner):**
-  ```bash
-  npx playwright test --ui
-  ```
-* **Run in Headed Mode (Visual browser execution):**
-  ```bash
-  npx playwright test --headed
-  ```
-
----
 
 ## Viewing Test Reports
 
