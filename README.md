@@ -146,4 +146,3 @@ npx playwright test
 ## Notes
 
 This project was developed against a private evaluation environment. Credentials and access tokens are not included in the repository.
-```
